@@ -1,5 +1,5 @@
 function App() {
-  return <div></div>;
+  return <div>World Wise!</div>;
 }
 
 export default App;
