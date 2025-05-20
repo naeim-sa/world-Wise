@@ -17,7 +17,7 @@ function App() {
         <Route path="pricing" element={<Pricing />} />
         <Route path="/login" element={<Login />} />
         <Route path="app" element={<AppLayout />}>
-          <Route index element={<p>List of cities</p>} />
+          <Route index element={<CityList />} />
           <Route path="cities" element={<CityList />} />
           <Route path="contries" element={<p>Countries</p>} />
           <Route path="form" element={<p>Form</p>} />
