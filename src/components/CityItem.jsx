@@ -1,14 +1,19 @@
 import styles from "./CityItem.module.css";
+import PropTypes from "prop-types";
 
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
+const date = new Date();
+
+const formatDate = (date) => {
+  return new Intl.DateTimeFormat("en", {
     day: "numeric",
     month: "long",
     year: "numeric",
   }).format(new Date(date));
+};
 
 function CityItem({ city }) {
   const { cityName, emoji, data } = city;
+  console.log(data);
 
   return (
     <li className={styles.cityItem}>
@@ -19,5 +24,9 @@ function CityItem({ city }) {
     </li>
   );
 }
+
+CityItem.propTypes = {
+  city: PropTypes.object.isRequired,
+};
 
 export default CityItem;
