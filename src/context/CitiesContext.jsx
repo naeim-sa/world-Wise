@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
 import PropTypes from "prop-types";
 
 const BASE_URL = "http://localhost:9000";
@@ -32,8 +32,15 @@ function CitiesProvider({ children }) {
   );
 }
 
+function useCities() {
+  const context = useContext(CitiesContext);
+  if (context === undefined)
+    throw new Error("Cities was used outside the CitiesProvider");
+  return context;
+}
+
 CitiesProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export { CitiesProvider };
+export { CitiesProvider, useCities };
