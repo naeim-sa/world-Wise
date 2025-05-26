@@ -59,6 +59,42 @@
         "lat": "41.01919329778972",
         "lng": "29.18189030772867"
       }
+    },
+    {
+      "id": "5c56",
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2025-05-26T14:40:30.263Z",
+      "notes": "",
+      "position": {
+        "lat": "35.712110446158",
+        "lng": "51.483057740467"
+      }
+    },
+    {
+      "id": "bd1c",
+      "cityName": "Amiriyeh",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2025-05-26T14:40:30.263Z",
+      "notes": "b",
+      "position": {
+        "lat": "35.12408408358281",
+        "lng": "54.21205323705062"
+      }
+    },
+    {
+      "id": "753c",
+      "cityName": "Chiusa di Pesio",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2025-05-26T14:46:20.205Z",
+      "notes": "dvf",
+      "position": {
+        "lat": "44.24362421713382",
+        "lng": "7.615552753490308"
+      }
     }
   ]
 }
