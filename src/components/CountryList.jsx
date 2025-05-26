@@ -6,6 +6,7 @@ import CountryItem from "./CountryItem";
 
 import styles from "./CountryList.module.css";
 import PropTypes from "prop-types";
+import { useMapEvent } from "react-leaflet";
 
 function CountryList() {
   const { cities, isLoading } = useCities();
@@ -33,8 +34,8 @@ function CountryList() {
 }
 
 CountryList.propTypes = {
-  cities: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool.isRequired,
+  cities: PropTypes.array,
+  isLoading: PropTypes.bool,
 };
 
 export default CountryList;
