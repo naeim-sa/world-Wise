@@ -1,3 +1,40 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "id": "d2f6",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-06-01T05:37:28.179Z",
+      "notes": "",
+      "position": {
+        "lat": "40.37666482937322",
+        "lng": "-3.7123807317371353"
+      }
+    },
+    {
+      "id": "edfe",
+      "cityName": "Bellver de Cerdanya",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-06-01T05:38:12.573Z",
+      "notes": "",
+      "position": {
+        "lat": "42.40568084700212",
+        "lng": "1.8045328792307695"
+      }
+    },
+    {
+      "id": "f655",
+      "cityName": "La Poveda de Soria",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-06-01T06:18:12.252Z",
+      "notes": "",
+      "position": {
+        "lat": "42.04482962254067",
+        "lng": "-2.5040686985356175"
+      }
+    }
+  ]
 }

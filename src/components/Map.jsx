@@ -8,14 +8,12 @@ import {
   useMapEvents,
 } from "react-leaflet";
 
+import styles from "./Map.module.css";
 import { useEffect, useState } from "react";
 import { useCities } from "../context/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import { useUrlPosition } from "../hooks/useUrlPosition";
-
 import Button from "./Button";
-
-import styles from "./Map.module.css";
 
 function Map() {
   const { cities } = useCities();
@@ -81,7 +79,6 @@ function Map() {
 function ChangeCenter({ position }) {
   const map = useMap();
   map.setView(position);
-
   return null;
 }
 
@@ -92,4 +89,5 @@ function DetectClick() {
     click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
 }
+
 export default Map;
